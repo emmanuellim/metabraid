@@ -1,0 +1,21 @@
+{
+    "$schema": "https://github.com/emmanuellim/metabraid/schema",
+    "title": "Organization",
+    "description": "Firm, Institution, or Enterprise where the Architecture is implemented",
+    "type": "object",
+     
+    "properties": {
+     
+       "name": {
+          "description": "Name of the organization",
+          "type": "string"
+       },
+         
+       "level": {
+          "type": "string",
+          "pattern": "\b(ENTERPRISE|LOB|DEPT)\b"       
+       }
+    },
+     
+    "required": ["name", "level"]
+ }
